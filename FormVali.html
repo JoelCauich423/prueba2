@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estiloFV.css">
+  <script type="text/javascript">
+    function valida_enviar(){
+      if(document.contenedor1.curp.value.length == 0) {
+        alert("Tienes que escribir tu CURP")
+        document.contenedor1.curp.focus()
+        return 0;
+      }
+      if(document.contenedor2.nombre.value.length == 0) {
+        alert("Tienes que escribir tu NOMBRE")
+        document.contenedor2.nombre.focus()
+        return 0;
+      }
+      if(document.contenedor2.primer.value.length == 0) {
+        alert("Tienes que escribir tu PRIMER APELLIDO")
+        document.contenedor2.primer.focus()
+        return 0;
+      }
+      if(document.contenedor2.segundo.value.length == 0) {
+        alert("Tienes que escribir tu SEGUNDO APELLIDO")
+        document.contenedor2.segundo.focus()
+        return 0;
+      }
+      if(document.contenedor3.correo.value.length == 0) {
+        alert("Tienes que escribir tu CORREO ELECTRONICO")
+        document.contenedor3.correo.focus()
+        return 0;
+      }
+      if(document.contenedor3.sexo.value.length == 0) {
+        alert("Tienes que escribir tu SEXO")
+        document.contenedor3.sexo.focus()
+        return 0;
+      }
+      if(document.contenedor3.fecha.value.length == 0) {
+        alert("Tienes que escribir tu fecha")
+        document.contenedor3.fecha.focus()
+        return 0;
+      }
+      if(document.contenedor4.telefono.value.length == 0) {
+        alert("Tienes que escribir tu TELEFONO")
+        document.contenedor4.telefono.focus()
+        return 0;
+      }
+      if(document.contenedor4.celular.value.length == 0) {
+        alert("Tienes que escribir tu CELULAR")
+        document.contenedor4.celular.focus()
+        return 0;
+      }
+      document.contenedor.submit();
+    }
+  </script>
+</head>
+<body>
+  <!-- La parte de arriba -->
+  <div class="arriba">
+    <div class="imagen">
+      <img src="imagenes/logo.png" alt="">
+    </div>
+  </div>
+  <!-- La parte de enmedio -->
+  <div class="enmedio">
+    <h1>Datos generales del alumno</h1>
+    <hr id="hr_1">
+    <hr id="hr_2">
+    <h4>*Campos  obligatorios.</h4>
+    <p>CURP</p>
+    <div>
+      <form action="enviar.php" name="contenedor1" method="post">
+        <input type="text" class="campos" placeholder="CURP" name="curp">
+        <div id="ConCURP">
+          <a href="https://www.gob.mx/curp/">Consultar CURP 🔍︎</a>
+        </div>
+      </form>
+    </div>
+    <div class="parrafo1">
+    <P>Nombre*:</P>
+    <P id="ajuste">Primer apellido*:</P>
+    <P>Segundo apellido*:</P>
+    </div>
+    <div>
+      <form action="enviar.php" name="contenedor2" method="post">
+      <input type="text" class="campos" placeholder="Nombre" name="nombre">
+      <input type="text" class="campos" placeholder="Primer apellido" name="primer">
+      <input type="text" class="campos" placeholder="Segundo apellido" name="segundo">
+    </form>
+    </div>
+    <div class="parrafo2">
+      <P>Correo electronico*:</P>
+      <P id="ajuste2">Sexo:</P>
+      <P>Fecha de nacimiento:</P>
+    </div>
+    <div>
+      <form action="enviar.php" name="contenedor3" method="post">
+      <input type="email" class="campos" placeholder="Correo" name="correo">
+      <input type="text" class="campos" placeholder="Selecciona una opción" name="sexo">
+      <input type="date" class="campos" placeholder="dd/mm/aaaa" name="fecha">
+      </form>
+    </div>
+    <div class="parrafo3">
+      <P>Telefono fijo:</P>
+      <P>Celular:</P>
+    </div>
+    <div>
+      <form action="enviar.php" name="contenedor4" method="post">
+      <input type="text" class="campos" placeholder="Telefono fijo" name="telefono">
+      <input type="text" class="campos" placeholder="Celular" name="celular">
+    </form>
+    </div>
+    <p>Asunto*:</p>
+        <textarea name="Comentarios" class="asunto"></textarea><br><br>
+        <input type="button"value="Enviar" id="enviar" onclick="valida_enviar()">
+  </div>
+  <!-- La parte de debajo -->
+  <div class="abajo">
+    <h1>Joel Santiago Cauich Peraza</h1>
+    <h1>7SB</h1>
+    <h1>Programación web</h1>
+  </div>
+</body>
+</html>

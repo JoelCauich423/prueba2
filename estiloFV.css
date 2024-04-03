@@ -1,0 +1,106 @@
+body{
+  font-family: Helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  margin: 0;
+}
+.arriba{
+  height: 120px;
+  background-color: #cdcdcd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.imagen{
+     margin: auto;
+     text-align: center;
+}
+.imagen img{
+  height: 100px;
+}
+
+/* --------------------- */
+.enmedio{
+  height: 1150px;
+  padding: 30px;
+}
+h4{
+  color: #631233;
+}
+#hr_1{
+  height: 1px;
+  background-color: #631233;
+  margin: 0;
+}
+#hr_2{
+  margin: 0;
+  height: 10px;
+  width: 50px;
+  background-color: #631233;
+}
+#ConCURP{
+  display: inline-block;
+  height: 30px;
+  width: 150px;
+  background-color: #641233;
+  padding: 5px;
+}
+#ConCURP a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  line-height: 28px
+}
+p{
+  font-weight: bold;
+}
+.parrafo1 p{
+  display: inline-block;
+  margin-right: 300px;
+}
+#ajuste{
+  margin-right: 245px;
+}
+.parrafo2 p{
+  display: inline-block;
+  margin-right: 220px;
+}
+#ajuste2{
+  margin-right: 325px;
+}
+.parrafo3 p{
+  display: inline-block;
+  margin-right: 275px;
+}
+.campos{
+  width: 350px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px #999 solid;
+  margin-right: 15px;
+}
+.asunto{
+  width: 1000px;
+  height: 500px;
+  border-radius: 5px;
+  border: 1px #999 solid;
+  resize: none;
+}
+#enviar{
+  padding: 10px 30px;
+  background-color: #13322c;
+  color: white;
+  border: 0;
+}
+/* --------------------- */
+.abajo{
+  border: 1px #631233 solid;
+  height: 150px;
+  background-color: #631233;
+  color: white;
+  text-align: center;
+
+}
